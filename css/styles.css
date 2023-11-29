@@ -1,1 +1,86 @@
 @import'./normalize.css';
+
+/* ================= GOOGLE FONTS============================*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+/* =================VRIABLE CSS============================*/
+:root{
+    --header-height: 3.5rem;
+    --animate-snow-1: animate-snow-1 infinite 5s ease-in-out;
+
+    /* ===============Colours=============================== */
+    /* Color mode HSL */
+    --color-primary: hsl(210, 80%, 58%);
+    --color-primary-alt: hsl(210, 80%, 50%);
+    --color-title: hsl(210, 24%, 90%);
+    --color-text: hsl(210, 16%, 70%);
+    --color-white: #fff;
+    --color-body: hsl(210, 32%, 4%);
+
+    /* =============== Font and Typography=============================== */
+    --body-font:'Poppins', sans-serif;
+    --secondary-font: 'Dancing Script', cursive;
+    --biggest-font-size: 3.5rem;
+    --h1-font-size: 2.4rem;
+    --h2-font-size: 2.0rem; 
+    --h3-font-size: 1.6rem;
+    --normal-font-size: 1.5rem;
+    --small-font-size: 1.38rem;
+    --smaller-font-size: 1.25rem;
+
+    /* ================= Font Weight============================*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /* ================= z index　============================*/
+}
+
+/* ================= BASE ============================*/
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--body-font);
+    color: var(--color-text);
+    font-size: var(--normal-font-size);
+}
+
+h1,h2,h3{
+    color: var(--color-title);
+    font-weight: var(--font-medium);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* ================= REUSABLE CSS CLASSES ============================*/
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.grid{
+    display: grid;
+}
+
+.section{
+    padding-block: 5rem 1rem;
+}
