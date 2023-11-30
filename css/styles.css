@@ -56,6 +56,7 @@ body{
     color: var(--color-text);
     font-size: var(--normal-font-size);
     background: var(--color-body);
+    line-height: 1.5;
 }
 
 h1,h2,h3{
@@ -86,7 +87,7 @@ img{
 }
 
 .section{
-    padding-block: 5rem 1rem;
+    padding-block: 4rem 1rem;
 }
 
 /* =============================== Snow animation====================================== */
@@ -276,6 +277,8 @@ img{
 .about__data{
     text-align: center;
     padding-inline: 3rem;
+    max-width: 450px;
+    margin-inline: auto;
 }
 .about__discription{
     line-height: 1.5;
@@ -302,8 +305,8 @@ img{
 }
 .about__image{
     width: 330px;
-    justify-self: center;
     padding-block: 3rem;
+    margin-inline: auto;
 }
 /* =============================== BUTTON ====================================== */
 .btn{
@@ -321,3 +324,53 @@ img{
     background: var(--color-primary-alt);
     box-shadow: 0 8px 32px hsla(210, 80%, 54%, .7);
 }
+
+/* =============================== SEND ====================================== */
+
+.send{
+    text-align: center;
+    padding-top: 1rem;
+    position: relative;
+}
+.send__container{
+    row-gap: 3rem;
+}
+.send__card{
+    max-width: 200px;
+    margin: 1.5rem auto;
+}
+.send__image{
+    width: 190px;
+    padding-bottom: 2rem;
+}
+.send__title{
+    padding-bottom: 1rem;
+    font-size: var(--h3-font-size);
+}
+.send__description{
+    font-size: var(--smaller-font-size);
+}
+
+.send__snow-1,
+.send__snow-2,
+.send__snow-3{
+    width: 50px;
+    position: absolute;
+}
+.send__snow-1{
+    left: 3rem;
+    top: 23rem;
+    animation: var(--animate-snow-1);
+}
+.send__snow-2{
+    right: 3rem;
+    top: 50rem;
+    animation: var(--animate-snow-2);
+}
+.send__snow-3{
+    left: 3rem;
+    bottom: 19rem;
+    animation: var(--animate-snow-1);
+}
+
+/* =============================== Celebrate ====================================== */
