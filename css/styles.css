@@ -21,7 +21,7 @@
     --body-font:'Poppins', sans-serif;
     --secondary-font: 'Dancing Script', cursive;
     --biggest-font-size: 3.5rem;
-    --h1-font-size: 2.4rem;
+    --h1-font-size: 4.0rem;
     --h2-font-size: 2.0rem; 
     --h3-font-size: 1.6rem;
     --normal-font-size: 1.5rem;
@@ -183,4 +183,59 @@ img{
     transform: rotate(15deg);
     bottom: 3rem;
     right: 3rem;
+}
+
+/* =============================== HOME ====================================== */
+.home{
+    position: relative;
+    background: linear-gradient(180deg,
+                                hsl(210, 88%, 20%),
+                                hsl(210, 70%, 58%));
+    height: 650px;
+    padding-top: 10rem;
+    overflow: hidden;
+}
+.home__title{
+    font-family: var(--secondary-font);
+    text-align: center;
+    font-size: var(--h1-font-size);
+    color: #fff;
+    margin-top: 3rem;
+}
+.home img{
+    position: absolute;
+}
+.home__snow,
+.home__mountain-1{
+    bottom: 0;
+}
+.home__village,
+.home__pine-tree,
+.home__moon,
+.home__trineo{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.home__village{
+    width: 260px;
+    bottom: 2rem;
+}
+.home__pine-tree{
+    width: 250px;
+    bottom: 7rem;
+}
+.home__mountain-2{
+    bottom: 5rem;
+}
+.home__mountain-3{
+    bottom: 10rem;
+}
+.home__moon{
+    width: 300px;
+    bottom: 14rem;
+}
+.home__trineo{
+    width: 240px;
+    bottom: 24rem;
 }
