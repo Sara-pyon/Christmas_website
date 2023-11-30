@@ -6,7 +6,8 @@
 /* =================VRIABLE CSS============================*/
 :root{
     --header-height: 6rem;
-    --animate-snow-1: animate-snow-1 infinite 5s ease-in-out;
+    --animate-snow-1: animate-snow-1 5s infinite ease-in-out;
+    --animate-snow-2: animate-snow-2 5s infinite ease-in-out;
 
     /* ===============Colours=============================== */
     /* Color mode HSL */
@@ -87,6 +88,25 @@ img{
 .section{
     padding-block: 5rem 1rem;
 }
+
+/* =============================== Snow animation====================================== */
+@keyframes animate-snow-1 {
+    0%, 100%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(1);
+    }
+}
+@keyframes animate-snow-2 {
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+}
+
 
 /* =============================== header & NAV ====================================== */
 .header{
@@ -185,6 +205,11 @@ img{
     right: 3rem;
 }
 
+/* Change background header */
+.scroll-header{
+    background: var(--color-body);
+}
+
 /* =============================== HOME ====================================== */
 .home{
     position: relative;
@@ -238,4 +263,61 @@ img{
 .home__trineo{
     width: 240px;
     bottom: 24rem;
+}
+
+/* =============================== ABOUT ====================================== */
+.about{
+    padding-block: 8rem 5rem;
+}
+.about__container{
+    position: relative;
+    row-gap: 3rem;
+}
+.about__data{
+    text-align: center;
+    padding-inline: 3rem;
+}
+.about__discription{
+    line-height: 1.5;
+    padding-bottom: 3rem;
+}
+.section__title{
+    font-family: var(--secondary-font);
+    font-size: 2.5rem;
+    padding-bottom: 3rem;
+}
+.about__snow-1{
+    position: absolute;
+    width: 45px;
+    left: 4rem;
+    top: 21rem;
+    animation: var(--animate-snow-1);
+}
+.about__snow-2{
+    position: absolute;
+    width: 45px;
+    right: 2rem;
+    top: 48rem;
+    animation: var(--animate-snow-2);
+}
+.about__image{
+    width: 330px;
+    justify-self: center;
+    padding-block: 3rem;
+}
+/* =============================== BUTTON ====================================== */
+.btn{
+    display: inline-block;
+    padding: 2rem 3rem;
+    border-radius: 30rem;
+    background: var(--color-primary);
+    border: 0;
+    font-weight: var(--font-medium);
+    color: #fff;
+    cursor: pointer;
+    transition: all .4s;
+}
+.btn:hover{
+    background: var(--color-primary-alt);
+    box-shadow: 0 8px 32px hsla(210, 80%, 54%, .7);
 }
