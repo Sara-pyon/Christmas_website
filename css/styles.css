@@ -373,4 +373,93 @@ img{
     animation: var(--animate-snow-1);
 }
 
-/* =============================== Celebrate ====================================== */
+/* =============================== footer ====================================== */
+
+.footer__container{
+    position: relative;
+    padding-inline: 3rem;
+    text-align: center;
+    padding-bottom: 4rem;
+    overflow: hidden;
+}
+.footer__social-link,
+.footer__link,
+.footer__copy{
+    color: #fff;
+}
+.footer__link{
+    font-family: var(--secondary-font);
+    font-size: 2rem;
+}
+.footer__social{
+    padding-block: 1.5rem 3rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 2.4rem;
+}
+.footer__social-link{
+    font-size: 2.1rem;
+    cursor: pointer;
+    transition: color .5s;
+}
+.footer__social-link:hover{
+    color: var(--color-primary);
+}
+.footer__snow-1,
+.footer__snow-2{
+    position: absolute;
+    width: 50px;
+}
+.footer__copy{
+    font-size: 1.2rem;
+}
+.footer__snow-1{
+    animation: var(--animate-snow-1);
+    left: 2rem;
+    top: 2rem;
+}
+.footer__snow-2{
+    width: 70px;
+    animation: var(--animate-snow-2);
+    right: -2rem;
+    bottom: 3rem;
+}
+
+/* =============================== SCROLL BAR ====================================== */
+::-webkit-scrollbar{
+    width: .6rem;
+    border-radius: 10rem;
+    background-color: hsl(210, 8%, 25%);
+}
+::-webkit-scrollbar-thumb{
+    background-color: hsl(210, 8%, 35%);
+}
+
+/* =============================== SCROLL UP ====================================== */
+.scrollup{
+    position: fixed;
+    right: 1.6rem;
+    bottom: -50%;
+    background: #fff;
+    font-size: 1.7rem;
+    color: #000;
+    display: inline-flex;
+    padding: .3rem .7rem;
+    border-radius: 5px;
+    z-index: var(--z-tooltip);
+    transition: all 0.3s;
+}
+.scrollup:hover{
+    transform: translateY(-7px);
+}
+.show-scroll{
+    bottom: 3rem;
+}
+
+/* =============================== SCROLL SECTIONS ACTIVE LINK  ====================================== */
+.active-link{
+    color: var(--color-primary);
+}
+
+/* =============================== BREAKPOINTS  ====================================== */
+

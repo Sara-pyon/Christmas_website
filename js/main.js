@@ -32,3 +32,34 @@ const scrollHeader = () =>{
                          header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader);
+
+// ====================== SHOW SCROLL UP ============================
+const scrollUP = () => {
+    const scrollUp = document.getElementById('scrollUp');
+    this.scrollY >=  350 ? scrollUp.classList.add('show-scroll'):
+                           scrollUp.classList.remove('show-scroll');    
+};
+window.addEventListener('scroll', scrollUP);
+
+// ====================== SCROLL SECTIONS ACTIVE LINK  ============================
+const sections = document.querySelectorAll('.section');
+console.log(sections);
+
+const scrollActive = () =>{
+    const scrollY = window.pageYOffset;
+
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight,
+              sectionTop = current.offsetTop-320,
+              sectionId = current.getAttribute('id'),
+              sectionClass =document.querySelector('.nav__menu a[href*=' + sectionId + ']');
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            sectionClass.classList.add('active-link')
+        }else{
+             sectionClass.classList.remove('active-link')
+        }
+    })
+}
+
+window.addEventListener('scroll', scrollActive);

@@ -13,6 +13,9 @@
     <title>Christmas Website</title>
  </head>
  <body>
+   
+    <!-- =====================HEADER====================== -->
+
     <header class="header" id="header">
         <div class="nav container">
             <a href="#" class="nav__logo">
@@ -21,10 +24,10 @@
             </a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">About</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Send</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Celebrate</a></li>
+                    <li class="nav__item"><a class="nav__link active-link" href="#home">Home</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#send">Send</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#celebrate">Celebrate</a></li>
                 </ul>
                 <!-- Close Icon -->
                 <div class="nav__close" id="nav-close">
@@ -41,7 +44,9 @@
         </div>
     </header>
 
-    <section class="home section">
+     <!-- =====================MAIN====================== -->
+
+    <section class="home section" id="home">
         <h1 class="home__title">Merry Christmas</h1>
 
         <img src="images/home-moon.png" alt="home image" class="home__moon">
@@ -54,7 +59,7 @@
         <img src="images/home-mountain-1.png" alt="home image" class="home__mountain-1">
     </section>
 
-    <section class="about section">
+    <section class="about section" id="about">
         <div class="about__container container grid">
             <div class="about__data">
                 <h2 class="section__title">About Sharing <br>
@@ -96,7 +101,7 @@
         </div>
     </section>
 
-    <section class="celebrate section" id="celebratet">
+    <section class="celebrate section" id="celebrate">
         <div class="about__container container grid">
             <div class="about__data">
                 <h2 class="section__title">Celebrate With A <br>
@@ -108,17 +113,33 @@
             <img src="images/celebarte-church.png" alt="about image" class="about__image">
             <img src="images/snow-img.png" alt="about image" class="about__snow-1">
             <img src="images/snow-img.png" alt="about image" class="about__snow-2">
-            
         </div>
     </section>
 
-
-
-
-    <!-- =====================HEADER====================== -->
-    <!-- =====================MAIN====================== -->
     <!-- =====================FOOTER====================== -->
+
+    <section class="footer" id="footer">
+        <div class="footer__container container">
+            <h3 class="footer__logo"><a class="footer__link" href="#">Christmas</a></h3>
+            <div class="footer__social">
+                <a href="https://twitter.com/" target="_blank" class="footer__social-link"><i class="ri-twitter-fill"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" class="footer__social-link"><i class="ri-instagram-fill"></i></a>
+                <a href="https://www.facebook.com/" target="_blank" class="footer__social-link"><i class="ri-facebook-fill"></i></a>
+            </div>
+             <span class="footer__copy">
+                &#169 Copyright Bedimcode. All rights reserved
+             </span>
+            <img src="images/snow-img.png" alt="about image" class="footer__snow-1">
+            <img src="images/snow-img.png" alt="about image" class="footer__snow-2">
+        </div>
+    </section>
+    
     <!-- =====================SCROLL UP====================== -->
+    <a href="#" class="scrollup" id="scrollUp">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+   
     <!-- =====================RELAX JS====================== -->
     <!-- ===================== GSAP====================== -->
     <!-- =====================SCROLLREVERAL====================== -->
