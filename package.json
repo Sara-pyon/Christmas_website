@@ -13,6 +13,6 @@
     "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
-    "rellax": "^1.12.1"
+    "js": "^0.1.0"
   }
 }

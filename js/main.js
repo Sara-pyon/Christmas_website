@@ -1,6 +1,5 @@
-import Rellax from './relax.min.js';
-import gasp from './gsap.mini.js';
-import ScrollReveal from './scroll.reveral.min.js';
+import Rellax from './relax.min.js'
+import ScrollReveal from './scroll.reveral.min.js'
 // ====================== SHOW MENU =============================
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
@@ -31,7 +30,7 @@ navLink.forEach(link => link.addEventListener('click', linkAction))
 // ====================== CHANGE BACKGROUND HEADER ============================
 const scrollHeader = () =>{
     const header = document.getElementById('header');
-    this.scrollY >= 50 ? header.classList.add('scroll-header') : 
+    window.scrollY >= 50 ? header.classList.add('scroll-header') : 
                          header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader);
@@ -39,7 +38,7 @@ window.addEventListener('scroll', scrollHeader);
 // ====================== SHOW SCROLL UP ============================
 const scrollUP = () => {
     const scrollUp = document.getElementById('scrollUp');
-    this.scrollY >=  350 ? scrollUp.classList.add('show-scroll'):
+    window.scrollY >=  350 ? scrollUp.classList.add('show-scroll'):
                            scrollUp.classList.remove('show-scroll');    
 };
 window.addEventListener('scroll', scrollUP);
