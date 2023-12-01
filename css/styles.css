@@ -81,6 +81,7 @@ img{
 .container{
     max-width: 1024px;
     margin: 0 auto;
+    overflow: hidden;
 }
 .grid{
     display: grid;
@@ -659,3 +660,5 @@ img{
         margin-inline: auto;
     }
 }
+
+/* =============================== GSAP ANIMATION  ====================================== */
