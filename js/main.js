@@ -1,3 +1,4 @@
+import Rellax from './relax.min.js';
 // ====================== SHOW MENU =============================
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
