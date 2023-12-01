@@ -156,7 +156,7 @@ img{
         left: 0;
         background-color: var(--color-body);
         width: 100%;
-        padding-block: 6rem;
+        padding-block: 4rem;
         transition: top .6s;
     }
     .show-menu{
@@ -248,7 +248,7 @@ img{
     bottom: 2rem;
 }
 .home__pine-tree{
-    width: 250px;
+    width: 220px;
     bottom: 7rem;
 }
 .home__mountain-2{
@@ -268,7 +268,7 @@ img{
 
 /* =============================== ABOUT ====================================== */
 .about{
-    padding-block: 8rem 5rem;
+    padding-block: 10rem 1rem;
 }
 .about__container{
     position: relative;
@@ -336,7 +336,7 @@ img{
     row-gap: 3rem;
 }
 .send__card{
-    max-width: 200px;
+    width: 200px;
     margin: 1.5rem auto;
 }
 .send__image{
@@ -463,3 +463,199 @@ img{
 
 /* =============================== BREAKPOINTS  ====================================== */
 
+/* For medium devices */
+@media screen and (min-width: 576px) {
+    .home__village{
+        width: 360px
+    }
+    .home__pine-tree{
+        width: 330px;
+    }
+    .home__moon{
+        bottom: 17rem;
+    }
+    .home__trineo{
+        bottom: 27rem;
+    }
+}
+
+@media screen and (min-width: 767px){
+    .nav__toggle,
+    .nav__close,
+    .nav__image-1,
+    .nav__image-2{
+        display: none;
+    }
+    .nav__list{
+       display: flex;
+       flex-direction: row;
+       column-gap: 7rem;
+    }
+    .home{
+        height: 800px
+    }
+    .home__moon{
+        width: 400px;
+        bottom: 20rem;
+    }
+    .home__trineo{
+        width: 320px;
+        bottom: 32rem;
+    }
+    .home__village{
+        width: 460px;
+    }
+    .home__pine-tree{
+        width: 420px;
+    }
+    .send{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .send__container{
+        grid-template-columns: repeat(2,200px);
+        column-gap: 8rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section{
+        padding-top: 8rem;
+    }
+    .home__village{
+        width: 500px;
+    }
+    .home__title{
+        font-size: 7rem;
+    }
+    .home__moon{
+        width: 430px;
+        bottom: 21rem;
+    }
+    .home__pine-tree{
+        width: 400px;
+        bottom: 11rem;
+    }
+    .home__trineo{
+        width: 340px;
+        bottom: 34rem;
+    }
+    .nav{
+        height: 7rem;
+    }
+    .about__data{
+        text-align: inherit;
+        margin: 0;
+        padding-inline: 1rem;
+    }
+    .about__container{
+        display: flex;
+        grid-template-columns: 550px 330px;
+        align-items: center;
+    }
+    .about__image{
+        order: -1;
+        width: 500px;
+    }
+    .about__snow-1{
+        left: 2rem;
+        top: 4rem;
+    }
+    .about__snow-2{
+        right: 20rem;
+        top: 31rem;
+    }
+    .section__title{
+        font-size: 4rem;
+    }
+    .about__discription,
+    .send__discription{
+        font-size: 2rem;;
+    }
+    .btn{
+        font-size: 1.8rem;
+    }
+    .send__container{
+        padding-top: 3rem;
+        grid-template-columns: repeat(3,230px);
+        column-gap: 12rem;
+    }
+    .send__card{
+        width: 230px;
+    }
+    .send__title{
+        font-size: 2.1rem;
+    }
+    .send__snow-1{
+        top: 4rem;
+        left: 10rem;
+    }
+    .send__snow-2{
+        right: 30rem;
+    }
+    .send__snow-3{
+        top: 25rem;
+        left: 38rem;
+    }
+    .celebrate{
+        padding-top: 10rem;
+    }
+    .celebrate__image{
+        order: 1;
+    }
+    .footer__container{
+        padding-top: 10rem;
+    }
+    .footer__link{
+        font-size: 2.5rem;
+    }
+    .footer__social-link{
+        font-size: 2.5rem;
+    }
+    .footer__social{
+        padding-top: 0.5rem;
+        column-gap: 4rem;
+    }
+    .footer__copy{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .home{
+        height: 1000px;
+    }
+    .home__title{
+        font-size: 9rem;
+    }
+    .home__mountain-1,
+    .home__mountain-2,
+    .home__mountain-3,
+    .home__snow{
+        width: 100%;
+    }
+    .home__village{
+        width: 750px;
+        bottom: 5rem;
+    }
+    .home__pine-tree{
+        width: 800px;
+        bottom: 10rem;
+    }
+    .home__moon{
+        width: 620px;
+    }
+    .home__trineo{
+        width: 510px;
+        bottom: 40rem;
+    }
+}
+
+/* For 2K */
+@media screen and (min-width:1700px){
+    .home{
+        max-width: 1280px;
+        margin-inline: auto;
+    }
+}

@@ -43,14 +43,13 @@ window.addEventListener('scroll', scrollUP);
 
 // ====================== SCROLL SECTIONS ACTIVE LINK  ============================
 const sections = document.querySelectorAll('.section');
-console.log(sections);
 
 const scrollActive = () =>{
     const scrollY = window.pageYOffset;
 
     sections.forEach(current =>{
         const sectionHeight = current.offsetHeight,
-              sectionTop = current.offsetTop-320,
+              sectionTop = current.offsetTop-270,
               sectionId = current.getAttribute('id'),
               sectionClass =document.querySelector('.nav__menu a[href*=' + sectionId + ']');
 
@@ -61,5 +60,6 @@ const scrollActive = () =>{
         }
     })
 }
-
 window.addEventListener('scroll', scrollActive);
+
+// ====================== PARALLAX ============================
