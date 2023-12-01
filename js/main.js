@@ -1,4 +1,6 @@
 import Rellax from './relax.min.js';
+import gasp from './gsap.mini.js';
+import ScrollReveal from './scroll.reveral.min.js';
 // ====================== SHOW MENU =============================
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
